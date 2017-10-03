@@ -1,0 +1,20 @@
+## Open-Close
+
+Con el codigo actual, crear otro cine _implicaria modificar la clase main_**, ya que
+es un menu diseñado solamente para los dos cines actuales. Por lo tanto, no cumple
+con este principio.
+
+---
+
+## Liskov-Sustitution
+
+No se cumple con este principio, ya que _no existe una generalización de las dos clases
+cine existente_** (existen metodos repetidos). Además, el cliente (menú improvisado en
+consola) interactua con ambas clases. No se usa ni polimorfismo ni duck-typing.
+
+---
+
+## Single Responsibility
+
+Al no haber una clase gestora para los cines, las acciones de listar y guardar entrada son asumidas 
+por las clases de cines existentes.
